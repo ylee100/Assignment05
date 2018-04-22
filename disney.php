@@ -3,7 +3,7 @@
   <body>
     <header>
       <!--Maybe header with Disney's signature logo or/and something-->
-      <h1>Pixar</h1>
+      <h1>Disney</h1>
     </header>
     <!--navigation bar-->
     <div class="container">
