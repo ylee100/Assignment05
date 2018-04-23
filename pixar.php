@@ -1,5 +1,5 @@
 <?php $currentTitle = 'Pixar'; include'inc/html-top.inc';?>
-<!--F-Pattern Layout-->
+<!--Z-Pattern Layout-->
   <body>
     <header class="pixar-header">
       <!--Maybe header with Pixar's signature logo or/and something-->
