@@ -1,5 +1,5 @@
 <?php $currentTitle = 'DreamWorks'; include'inc/html-top.inc';?>
-<!--F-Pattern Layout-->
+<!--Z-Pattern Layout-->
   <body>
     <header>
       <!--Maybe header with Dreamworks's signature logo or/and something-->

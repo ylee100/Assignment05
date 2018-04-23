@@ -1,5 +1,5 @@
 <?php $currentTitle = 'Disney'; include'inc/html-top.inc';?>
-<!--F-Pattern Layout-->
+<!--Z-Pattern Layout-->
   <body>
     <header>
       <!--Maybe header with Disney's signature logo or/and something-->
