@@ -3,8 +3,9 @@
   <body>
     <header>
       <!--Maybe header with Disney's signature logo or/and something-->
-      <h1>Disney</h1>
+      <img src="images/disney/disney.png" title="disneylogo" alt="disneylogo">
     </header>
+        <?php include "inc/nav.inc" ?>
     <!--navigation bar-->
     <div class="container">
       <article class="about">
@@ -30,5 +31,8 @@
         <img src="images/disney/moana.jpg" alt="pic of moana">
       </aside>
     </div>
+
+    <?php include'inc/scripts.inc';?>
+    
   </body>
 </html>

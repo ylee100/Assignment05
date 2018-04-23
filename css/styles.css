@@ -1,0 +1,51 @@
+header{
+  margin-top: 30px;
+  text-align: center;
+}
+header img{
+  width: 500px;
+}
+.pixar-header img{
+  width: 700px;
+}
+.dreamworks-header{
+  margin-top: 0px;
+}
+img{
+  width: 300px;
+}
+nav {
+  padding: 30px;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: pink;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 5px 30px 5px 30px;
+}
+
+nav a:hover { 
+  background-color: rgb(206,217,239); 
+  border-radius: 5px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav .is-current {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}

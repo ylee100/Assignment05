@@ -1,11 +1,12 @@
 <?php $currentTitle = 'Pixar'; include'inc/html-top.inc';?>
 <!--F-Pattern Layout-->
   <body>
-    <header>
+    <header class="pixar-header">
       <!--Maybe header with Pixar's signature logo or/and something-->
-      <h1>Pixar</h1>
+      <img src="images/pixar/pixar.png" title="pixarlogo" alt="pixarlogo">
     </header>
     <!--navigation bar-->
+    <?php include "inc/nav.inc" ?>
     <div class="container">
       <article class="about">
         <h2>About</h2>
@@ -23,11 +24,14 @@
       </article>
 
       <aside class="posters">
-        <img src="images/pixar/toystory.jpg" alt="pic of toy story">
+        <img src="images/pixar/toystory.jpeg" alt="pic of toy story">
         <img src="images/pixar/nemo.jpg" alt="pic of nemo">
-        <img src="images/pixar/insideout.jpg" alt="pic of inside out">
+        <img src="images/pixar/insideout.jpeg" alt="pic of inside out">
         <img src="images/pixar/coco.jpg" alt="pic of coco">
       </aside>
     </div>
+
+    <?php include'inc/scripts.inc';?>
+
   </body>
 </html>

@@ -1,11 +1,11 @@
 <?php $currentTitle = 'DreamWorks'; include'inc/html-top.inc';?>
 <!--F-Pattern Layout-->
   <body>
-    <header>
-      <!--Maybe header with Dreamworks's signature logo or/and something-->
-      <h1>DreamWorks</h1>
+    <header class="dreamworks-header">
+      <img src="images/dreamworks/dreamworks.png" title="dreamworkslogo" alt="dreamworkslogo">
     </header>
     <!--navigation bar-->
+    <?php include "inc/nav.inc" ?>
     <div class="container">
       <article class="about">
         <h2>About</h2>
@@ -30,5 +30,9 @@
         <img src="images/dreamworks/bossbaby.jpg" alt="pic of bossbaby">
       </aside>
     </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/menu-highlighter.js"></script>
+
   </body>
 </html>

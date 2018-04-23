@@ -3,7 +3,6 @@
       <head>
             <meta charset="utf-8">
             <title><?php echo $currentTitle ?></title>
-            <!--CSS, Fonts, etc. -->
+            <link rel="stylesheet" type="text/css" href="./css/styles.css">
             <!--JS?-->
-            <link rel = "stylesheet" type = "text/css" href = "css/style.css">
       </head>
