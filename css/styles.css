@@ -1,3 +1,16 @@
+h2,h3{
+  font-family: 'Luckiest Guy', cursive;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 20px;
+}
+p{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+}
 header{
   margin-top: 30px;
   text-align: center;
@@ -12,14 +25,14 @@ header img{
   margin-top: 0px;
 }
 img{
-  width: 300px;
+  width: 200px;
 }
 nav {
   padding: 30px;
   margin-top: 0;
   margin-left: 0;
   text-align: center;
-  background-color: pink;
+  background-color: #1252ba;
 }
 
 nav ul {
@@ -48,4 +61,18 @@ nav .is-current {
   background-color: black;
   color: white;
   border-radius: 5px;
+}
+.posters ul li{
+  display: block;
+  text-align: center;
+}
+article{
+  width: 600px;
+  float: right;
+  padding-right: 100px;
+}
+.posters p{
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
