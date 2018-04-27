@@ -42,9 +42,11 @@ nav ul {
 }
 
 nav a {
-  color: black;
+  color: #7ca1dd;
   display: block;
   text-decoration: none;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
   padding: 5px 30px 5px 30px;
 }
 
@@ -58,8 +60,8 @@ nav li {
 }
 
 nav .is-current {
-  background-color: black;
-  color: white;
+  background-color: #7ca1dd;
+  color: rgb(206,217,239);
   border-radius: 5px;
 }
 .posters ul li{
