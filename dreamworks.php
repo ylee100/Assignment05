@@ -1,4 +1,8 @@
-<?php $currentTitle = 'DreamWorks'; include'inc/html-top.inc';?>
+<?php
+$currentTitle = 'DreamWorks';
+include'inc/html-top.inc';
+require "db/dbmanager.php";
+?>
 <!--Z-Pattern Layout-->
   <body>
     <header class="dreamworks-header">

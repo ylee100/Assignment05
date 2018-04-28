@@ -3,8 +3,8 @@ require "dbaccess.php";
 date_default_timezone_set("America/New_York");
 
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$username = $name = $password = $confirm_password = "";
+$username_err = $password_err = $confirm_password_err = $name_err = $select_err = "";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $what = $_POST["what"];
@@ -14,9 +14,49 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($what == "login"){
       login();
     }
+    if($what == "survey"){
+      survey();
+    }
 }
 
-if($_SERVER["REQUEST_METHOD"] == "GET"){
+
+function survey(){
+      global $conn;
+      global $name;
+      global $name_err;
+      global $select_err;
+
+      $animation_company = "";
+
+      // Check if name is empty
+      if(empty(trim($_POST["name"]))){
+          $name_err = 'Please enter your name.';
+      } else{
+          $name = trim($_POST["name"]);
+      }
+
+      // Check if radio button is checked
+      if(!isset($_POST['favorite'])) {
+          $select_err = 'Please select an option';
+      } else{
+          $animation_company = trim($_POST["favorite"]);
+      }
+
+      if(empty($name_err) && empty($select_err)){
+            $stmt = $conn->prepare("INSERT INTO survey (name, favorite) VALUES (?, ?)");
+            $stmt->bind_param("ss", $name, $animation_company);
+
+            if ($stmt->execute() === TRUE) {
+                echo '<script type="text/javascript">';
+                echo 'alert("Thanks for completing our survey!")';
+                echo '</script>';
+            }
+            else{
+              echo "Something went wrong. Please try again later.";
+            }
+            $stmt->close();
+    }
+
 
 }
 
