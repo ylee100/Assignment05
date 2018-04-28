@@ -1,3 +1,7 @@
+body{
+  margin: 0 auto;
+}
+
 h2,h3{
   font-family: 'Luckiest Guy', cursive;
 }
@@ -80,5 +84,57 @@ article{
 }
 
 .survey {
-  
+
+}
+
+.blink{
+    //float: right;
+    //margin-right: 35px;
+    color: orangered;
+    animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+label{
+  color: #886800;
+  font-weight: bold;
+  float: left;
+}
+
+.bg-button-gold{
+  background-color: #886800;
+  color: white;
+  font-weight: bold;
+  float: left;
+  border-radius: 8px;
+}
+
+.bt{
+  margin-top: 5px;
+}
+
+.in, input{
+  float: left;
+}
+
+.sidebox{
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #886800;
+  max-width: 370px;
+}
+
+.fm{
+  padding: 10px;
+}
+
+
+aside{
+  margin-left: 100px;
 }

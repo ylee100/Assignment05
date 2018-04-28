@@ -39,12 +39,15 @@
         <br>
         <li><img src="images/dreamworks/bossbaby.jpg" alt="pic of bossbaby"></li>
         <li><p>the Boss Baby</p></li>
+        <li>
+          <h3 class="blink">Please complete this short survey</h3>
+        </li>
+        <li>
+            <?php include "inc/survey.inc";?>
+        </li>
       </ul>
       </div>
-      <!-- should be bottom-->
-      <div class="survey">
-        <?php include "inc/survey.inc";?>
-      </div>
+
     </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>

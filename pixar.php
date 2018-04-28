@@ -40,12 +40,15 @@
         <br>
         <li><img src="images/pixar/coco.jpg" alt="pic of coco"></li>
         <li><p>Coco</p></li>
+        <li>
+          <h3 class="blink">Please complete this short survey</h3>
+        </li>
+        <li>
+            <?php include "inc/survey.inc";?>
+        </li>
       </ul>
       </div>
-      <!-- should be bottom-->
-      <div class="survey">
-        <?php include "inc/survey.inc";?>
-      </div>
+
     </div>
 
     <?php include'inc/scripts.inc';?>

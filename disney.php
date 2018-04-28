@@ -38,12 +38,16 @@
         <br>
         <li><img src="images/disney/moana.jpg" alt="pic of moana"></li>
         <li><p>Moana</p></li>
+        <li>
+          <h3 class="blink">Please complete this short survey</h3>
+        </li>
+        <li>
+            <?php include "inc/survey.inc";?>
+        </li>
       </ul>
     </div>
-    <!-- should be bottom-->
-    <div class="survey">
-      <?php include "inc/survey.inc";?>
-    </div>
+
+
     </div>
 
 
