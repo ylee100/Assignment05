@@ -1,5 +1,11 @@
 
-<?php require "db/dbmanager.php"; ?>
+<?php
+require "db/dbmanager.php";
+session_start();
+if (isset($_SESSION['username'])) {
+    header("Location: survey_result.php");
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +39,7 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="index.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
 

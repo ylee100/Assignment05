@@ -14,7 +14,13 @@
 </head>
 <!--CREATE ACCOUNT needs to be connected to data access (php)-->
 <!--navigation bar-->
-<?php include "inc/nav.inc" ?>
+<?php
+include "inc/nav.inc";
+session_start();
+if (isset($_SESSION['username'])) {
+    header("Location: survey_result.php");
+}
+?>
 
   <body>
     <div class="wrapper">
