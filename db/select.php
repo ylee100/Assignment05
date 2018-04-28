@@ -1,5 +1,6 @@
 <?php
- $connect = mysqli_connect("localhost", "root", "", "assignment5");
+include "abaccess2.php";
+$connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  $output = '';
  $sql = "SELECT * FROM survey ORDER BY id DESC";
  $result = mysqli_query($connect, $sql);

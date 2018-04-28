@@ -1,5 +1,6 @@
 <?php
-  $connect = mysqli_connect("localhost", "root", "", "assignment5");
+  include "abaccess2.php";
+  $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	$id = $_POST["id"];
 	$text = $_POST["text"];
 	$column_name = $_POST["column_name"];
