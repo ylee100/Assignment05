@@ -50,8 +50,8 @@ nav a {
   padding: 5px 30px 5px 30px;
 }
 
-nav a:hover { 
-  background-color: rgb(206,217,239); 
+nav a:hover {
+  background-color: rgb(206,217,239);
   border-radius: 5px;
 }
 
@@ -77,4 +77,8 @@ article{
   text-align: center;
   font-family: 'Caveat', cursive;
   font-size: 20px;
+}
+
+.survey {
+  
 }

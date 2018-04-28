@@ -42,6 +42,10 @@
         <li><p>Coco</p></li>
       </ul>
       </div>
+      <!-- should be bottom-->
+      <div class="survey">
+        <?php include "inc/survey.inc";?>
+      </div>
     </div>
 
     <?php include'inc/scripts.inc';?>

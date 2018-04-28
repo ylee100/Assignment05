@@ -27,7 +27,7 @@
       <div class="posters">
         <ul>
           <br>
-          
+
         <li><img src="images/dreamworks/madagascar.jpg" alt="pic of madagascar"></li>
         <li><p>Madagascar</p></li>
         <br>
@@ -40,6 +40,10 @@
         <li><img src="images/dreamworks/bossbaby.jpg" alt="pic of bossbaby"></li>
         <li><p>the Boss Baby</p></li>
       </ul>
+      </div>
+      <!-- should be bottom-->
+      <div class="survey">
+        <?php include "inc/survey.inc";?>
       </div>
     </div>
 
