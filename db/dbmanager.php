@@ -11,9 +11,65 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($what == "signup"){
       signup();
     }
+    if($what == "login"){
+      login();
+    }
 }
 
 if($_SERVER["REQUEST_METHOD"] == "GET"){
+
+}
+
+function login(){
+      global $conn;
+      global $username;
+      global $password;
+      global $username_err;
+      global $password_err;
+
+      // Check if username is empty
+      if(empty(trim($_POST["username"]))){
+          $username_err = 'Please enter username.';
+      } else{
+          $username = trim($_POST["username"]);
+      }
+
+      // Check if password is empty
+      if(empty(trim($_POST['password']))){
+          $password_err = 'Please enter your password.';
+      } else{
+          $password = trim($_POST['password']);
+      }
+
+      // Validate credentials
+      if(empty($username_err) && empty($password_err)){
+
+        $param_username = $username;
+        $stmt = $conn->prepare("SELECT username, password FROM users WHERE username = ?");
+        $stmt->bind_param("s", $param_username);
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_assoc();
+
+        if ($result) {
+            $hashed_password = $result["password"];
+            if(password_verify($password, $hashed_password)){
+                /* Password is correct, so start a new session and
+                save the username to the session */
+                session_start();
+                $_SESSION['username'] = $username;
+                $stmt->close();
+                header("location: survey_result.php");
+            } else{
+                // Display an error message if password is not valid
+                $password_err = 'The password you entered was not valid.';
+            }
+        }
+        else{
+          // Display an error message if username doesn't exist
+          $username_err = 'No account found with that username.';
+        }
+
+      }
 
 }
 
