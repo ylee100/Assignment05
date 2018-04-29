@@ -2,7 +2,10 @@
 ## Links
 * Git Repo:https://github.com/ylee100/Assignment05
 * Website:
-* Database:
+* DB Server: 66.147.242.186
+* DB Name: urcscon3_animation
+* DB Username: urcscon3_mation
+* DB Password: coffee1N
 
 ## Information Architecture - Yeonwoo Lee
 ### Topic
