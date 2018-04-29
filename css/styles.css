@@ -21,6 +21,9 @@ p,a{
   font-family: 'Gochi Hand', cursive;
   font-size: 20px;
 }
+p{
+  text-align: left;
+}
 header{
   margin-top: 30px;
   text-align: center;

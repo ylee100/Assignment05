@@ -21,6 +21,33 @@ The index page will be given only 2 options either login or create account. (Aft
 
 
 
-## Coder - Agusi Kennedy
+
 
 ## Designer - Xiao Cheng
+
+### Page Layout
+
+The website used mostly F-pattern due to its content-heavy nature. We put the navigation bar on the top, follows the articles, and the survey form at the bottom.
+
+### Typography
+
+This website used cartoon fonts to represent the theme. For the titles, we chose a bolder font to stress the importance and distinguish the titles with the paragraphs. The paragraph font was set to a hand-written style in order to follow the website's mood and readability.
+
+### C.R.A.P Principles
+
+Used different types and sizes of fonts to contrast between contents.
+
+Each page follows the same pattern: About, Brief History, Featured Films.
+
+Each page follows the same alignment: navigation bar, paragraphs on the right, images on the left, survey form at the bottom.
+
+Objects with the same relationship are grouped together - images and introductions related to certain animation are grouped near each other.
+
+
+
+
+
+## Coder - Agusi Kennedy
+
+
+
