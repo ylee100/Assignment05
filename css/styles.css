@@ -2,7 +2,12 @@ body{
   margin: 0 auto;
   text-align: center;
 }
-
+header{
+  font-family: 'Luckiest Guy', cursive;
+}
+header h1{
+  font-size: 60px;
+}
 h2,h3{
   font-family: 'Luckiest Guy', cursive;
 }

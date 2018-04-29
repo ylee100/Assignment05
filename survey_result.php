@@ -10,7 +10,7 @@ if (!isset($_SESSION['username'])) {
       <head>
             <meta charset="utf-8">
             <title>Survey Result</title>
-            <link rel="stylesheet" type="text/css" href="./css/styles.css">
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,11 +26,11 @@ if (!isset($_SESSION['username'])) {
     <!--navigation bar-->
     <?php include "inc/loggedin_nav.inc" ?>
     <div class="container">
-      <br />
-            <br />
-			<br />
+      <br>
+      <br>
+			<br>
 			<div class="table-responsive">
-				<h3 align="center">Survey Result</h3><br />
+
 				<span id="result"></span>
 				<div id="live_data"></div>
 			</div>
