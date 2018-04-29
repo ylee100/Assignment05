@@ -24,6 +24,9 @@ p,a{
 p{
   text-align: left;
 }
+.wrapper p{
+  text-align: center;
+}
 header{
   margin-top: 30px;
   text-align: center;
