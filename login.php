@@ -13,17 +13,15 @@ if (isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Luckiest+Guy|Nanum+Brush+Script" rel="stylesheet">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+
 </head>
 <!--navigation bar-->
 <?php include "inc/nav.inc" ?>
   <body>
     <div class="wrapper">
         <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <p>Don't have an account?</p>
+        <a href="signup.php">Sign up now</a>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
           <input id="prodId" name="what" type="hidden" value="login">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -39,7 +37,6 @@ if (isset($_SESSION['username'])) {
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
 

@@ -1,5 +1,6 @@
 body{
   margin: 0 auto;
+  text-align: center;
 }
 
 h2,h3{
@@ -11,7 +12,7 @@ h2{
 h3{
   font-size: 20px;
 }
-p{
+p,a{
   font-family: 'Gochi Hand', cursive;
   font-size: 20px;
 }
@@ -57,6 +58,7 @@ nav a {
 nav a:hover {
   background-color: rgb(206,217,239);
   border-radius: 5px;
+  text-decoration: none;
 }
 
 nav li {
@@ -76,6 +78,7 @@ article{
   width: 600px;
   float: right;
   padding-right: 100px;
+  margin-top: 50px;
 }
 .posters p{
   text-align: center;
@@ -141,4 +144,10 @@ aside{
 
 .error{
   color: red;
+}
+
+.wrapper{ 
+  width: 300px; 
+  padding: 20px; 
+  margin-left: 38%;
 }
