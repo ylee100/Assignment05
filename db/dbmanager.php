@@ -85,13 +85,14 @@ function login(){
       if(empty($username_err) && empty($password_err)){
 
         $param_username = $username;
-        $stmt = $conn->prepare("SELECT username, password FROM users WHERE username = ?");
-        $stmt->bind_param("s", $param_username);
-        $stmt->execute();
-        $result = $stmt->get_result()->fetch_assoc();
+        $stmt = mysqli_prepare($conn, "SELECT username, password FROM users WHERE username = ?");
+        mysqli_stmt_bind_param($stmt, "s", $param_username);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $uname, $pass);
 
-        if ($result) {
-            $hashed_password = $result["password"];
+
+        if (mysqli_stmt_fetch($stmt)) {
+            $hashed_password = $pass;
             if(password_verify($password, $hashed_password)){
                 /* Password is correct, so start a new session and
                 save the username to the session */
@@ -128,12 +129,12 @@ function signup(){
             $username_err = "Please enter a username.";
         } else{
             $param_username = trim($_POST["username"]);
-            $stmt = $conn->prepare("SELECT id FROM users WHERE username = ?");
-          	$stmt->bind_param("s", $param_username);
-            $stmt->execute();
-      		  $result = $stmt->get_result()->fetch_assoc();
+            $stmt = mysqli_prepare($conn, "SELECT id FROM users WHERE username = ?");
+            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_bind_result($stmt, $id);
 
-            if ($result) {
+            if (mysqli_stmt_fetch($stmt)) {
                 $username_err = "This username is already taken.";
             }
             else{
@@ -169,10 +170,13 @@ function signup(){
               $param_username = $username;
               $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 
-              $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
-            	$stmt->bind_param("ss", $param_username, $param_password);
+              $stmt = mysqli_prepare($conn, "INSERT INTO users (username, password) VALUES (?, ?)");
+              mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+              ;
 
-              if ($stmt->execute() === TRUE) {
+              $rows = mysqli_stmt_execute($stmt);
+              if($rows > 0)
+              {
                   echo '<script type="text/javascript">';
                   echo 'alert("You have successfully created an account!")';
                   echo '</script>';
