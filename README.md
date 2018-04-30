@@ -48,6 +48,12 @@ Objects with the same relationship are grouped together - images and introductio
 
 
 ## Coder - Agusi Kennedy
+### Forms
+Created Survey, login and create account forms. Each of these have separate pages and uses PHP to send information to database.
+### Admin Page
+Created admin page which can be used to view,edit and add survey information to database.
+### Database
+Created MYSQL database to store all form information survey and account information.
 
 
 
