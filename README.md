@@ -17,7 +17,7 @@ The pages generally follows Z-Pattern. The header will have the usual navigation
 ### Intended Mood/Feeling
 Since the animations usually tend to be happy stories, the website should fee lively and bright. (Maybe even childish.)
 ### Intended Interactivity
-The index page will be given only 2 options either login or create account. (After creating account, user will be brought back to this index page to login.) After login, the user may be able to access any information or database. There will be separate page for just for survey which shows all the surveys in table form and can add/edit/delete any of the records in the database table. Thus, the intended movement of the user would be: Index -> Login -> Main Pages (Animation companies) -> Survey
+All pages should have login/create account buttons(links) preferably on topside of the page. After creating account, user will be brought back to this index page to login. After login, the user may be able to access any information or database. There will be separate page for just for survey which shows all the surveys in table form and can add/edit/delete any of the records in the database table. Thus, the intended movement of the user would be: Index -> Main Pages (Animation companies) -> Survey
 
 
 
@@ -54,6 +54,3 @@ Created Survey, login and create account forms. Each of these have separate page
 Created admin page which can be used to view,edit and add survey information to database.
 ### Database
 Created MYSQL database to store all form information survey and account information.
-
-
-
