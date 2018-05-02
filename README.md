@@ -1,7 +1,7 @@
 # Assignment05
 ## Links
 * Git Repo:https://github.com/ylee100/Assignment05
-* Website:
+* Website: http://urcsc174.org/assignment05/assignment05-Juneau/
 * DB Server: 66.147.242.186
 * DB Name: urcscon3_animation
 * DB Username: urcscon3_mation
